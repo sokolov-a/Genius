@@ -1,20 +1,16 @@
-import java.util.Scanner;
-
 public class RightTriangle {
     private int firstCathetus;
-    Scanner scan = new Scanner(System.in);
-
-    public int setFirstCathetus(){
-        return firstCathetus = scan.nextInt();
-    }
-
     private int secondCathetus;
-    public int setSecondCathetus(){
-        return secondCathetus = scan.nextInt();
+
+    public void setFirstCathetus(int firstCathetus) {
+        this.firstCathetus = firstCathetus;
     }
 
-    private double hypotenuse;
-    public double getHypotenuse(){
-        return hypotenuse = Math.sqrt(Math.pow(firstCathetus, 2) + Math.pow(secondCathetus, 2));
+    public void setSecondCathetus(int secondCathetus) {
+        this.secondCathetus = secondCathetus;
+    }
+
+    public double getHypotenuse() {
+        return Math.sqrt(firstCathetus * firstCathetus + secondCathetus * secondCathetus);
     }
 }

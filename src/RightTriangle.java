@@ -1,12 +1,9 @@
 public class RightTriangle {
-    private int firstCathetus;
-    private int secondCathetus;
+    private double firstCathetus;
+    private double secondCathetus;
 
-    public void setFirstCathetus(int firstCathetus) {
+    public RightTriangle(double firstCathetus, double secondCathetus) {
         this.firstCathetus = firstCathetus;
-    }
-
-    public void setSecondCathetus(int secondCathetus) {
         this.secondCathetus = secondCathetus;
     }
 
